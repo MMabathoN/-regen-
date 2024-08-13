@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mmabatho N's Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #FFC55A;
+            --secondary-color: #00215E;
+            --accent-color: #ffa71c;
+            --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        body {
+            margin: 60px auto;
+            max-width: 800px;
+            background-color: var(--secondary-color);
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 20px;
+            position: relative;
+        }
+
+        header h1 {
+            color: white;
+            text-align: left;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: var(--secondary-color);
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-family: 'Lato', sans-serif;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+            font-weight: bold;
+        }
+
+        .card {
+            background-color: white;
+            color: var(--secondary-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 6vw;
+            color: var(--primary-color);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            font-size: 4vw;
+            color: var(--secondary-color);
+        }
+
+        h3 {
+            font-size: 2vw;
+            color: var(--accent-color);
+        }
+
+        .project:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .email-link {
+            font-family: 'Indie Flower', cursive;
+            font-size: 2.5vw;
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .email-link:hover {
+            color: var(--accent-color);
+            animation: bounce 0.5s infinite alternate;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            body {
+                margin: 30px auto;
+                max-width: 90%;
+            }
+
+            h1 {
+                font-size: 8vw;
+            }
+
+            h2 {
+                font-size: 6vw;
+            }
+
+            h3 {
+                font-size: 3vw;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 10vw;
+            }
+
+            h2 {
+                font-size: 8vw;
+            }
+
+            h3 {
+                font-size: 4vw;
+                opacity: 0.7;
+            }
+
+            .navigation-links a {
+                padding: 2vw 3vw;
+                margin: 0.5vw;
+            }
+
+            img {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mmabatho N's Portfolio</h1>
+        <a href="#top"><img src="path_to_home_icon.png" alt="Home Icon" style="width: 50px; position: absolute; right: 20px; top: 20px;"></a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about" class="button">About</a></li>
+            <li><a href="#projects" class="button">Projects</a></li>
+            <li><a href="#skills" class="button">Skills</a></li>
+            <li><a href="#recommendations" class="button">Recommendations</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="card">
+        <h2>About Me</h2>
+        <img src="path_to_your_image.jpg" alt="Profile Image" style="width: 150px; border-radius: 50%;">
+        <p>Welcome to my portfolio! I am Mmabatho N, a passionate developer focused on creating impactful projects.</p>
+    </section>
+
+    <section id="skills" class="card">
+        <h2>Skills</h2>
+        <ul>
+            <li><img src="path_to_html_logo.png" alt="HTML Logo" style="width: 30px;"> HTML</li>
+            <li><img src="path_to_css_logo.png" alt="CSS Logo" style="width: 30px;"> CSS</li>
+            <li><img src="path_to_js_logo.png" alt="JavaScript Logo" style="width: 30px;"> JavaScript</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="card">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: Custom Web Design</h3>
+            <p>Description of the project.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2: Data Analysis Tool</h3>
+            <p>Description of the project.</p>
+        </div>
+        <div class="project">
+            <h3>Project 3: Mobile App Development</h3>
+            <p>Description of the project.</p>
+        </div>
+    </section>
+
+    <section id="recommendations" class="card">
+        <h2>Recommendations</h2>
+        <div id="recommendation-list">
+            <div class="recommendation">
+                <p>"Mmabatho's work is excellent!"</p>
+                <p>- John Doe</p>
+            </div>
+            <div class="recommendation">
+                <p>"Highly professional and creative."</p>
+                <p>- Jane Smith</p>
+            </div>
+        </div>
+        <form id="recommendation-form">
+            <label for="recommendation-text">Add your recommendation:</label><br>
+            <textarea id="recommendation-text" required></textarea><br>
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('recommendation-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const text = document.getElementById('recommendation-text').value;
+            if (text) {
+                const newRec = document.createElement('div');
+                newRec.className = 'recommendation';
+                newRec.innerHTML = `<p>"${text}"</p><p>- Anonymous</p>`;
+                document.getElementById('recommendation-list').appendChild(newRec);
+                alert('Thank you for your recommendation!');
+                document.getElementById('recommendation-form').reset();
+            }
+        });
+    </script>
+
+    <footer class="card">
+        <p>&copy; 2024 Mmabatho N. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
